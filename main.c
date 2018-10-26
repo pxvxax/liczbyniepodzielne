@@ -2,22 +2,16 @@
 
 int main() {
     int a;
+    int licznik_petli=0;
 
 
-    for (a = 1000; a >= 1; a--){
-        if (a % 2 !=0 && a % 3 !=0 && a % 5 !=0 && a % 7 !=0){
-
-
-
-
-
-
-printf("Wyświetla liczbę: %d\n", a);
-
-        break;
-        }
+    for (a = 999; !(a%3) || !(a%5) || !(a%7); a -= 2) {
+        licznik_petli++;
     }
+    printf("znaleziona liczba: %d\n", a);
 
+    printf("\n");
+    printf("liczba pętli wyniosła: %d\n", licznik_petli);
 
 
     return 0;
